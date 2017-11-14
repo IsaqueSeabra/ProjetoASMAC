@@ -1,0 +1,24 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package br.com.pucminas.psi.dao;
+
+import java.util.List;
+import br.com.pucminas.psi.model.Balancete;
+
+/**
+ *
+ * @author Robson Vieira
+ */
+public abstract interface BalanceteDAO {
+    
+    public void insert(Balancete balancete);
+    public void remove(int id_balancete, int id_despesa);
+    public List<Balancete> toList();
+    public Balancete search(int id_balancete, int id_despesa);
+    public void update(Balancete balancete);    
+        
+    
+}
